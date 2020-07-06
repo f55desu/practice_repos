@@ -34,7 +34,7 @@ double Pyramid::get_volume(double a, double h)
 
 //construct:
 
-Pyramid::Pyramid(double x1, double y1, double z1, double x2, double y2, double z2, double x3, double y3, double z3, double x4, double y4, double z4) // selecting one of the peaks as zero coordinate point
+Pyramid::Pyramid(double x1, double y1, double z1, double x2, double y2, double z2, double x3, double y3, double z3, double x4, double y4, double z4, double x5, double y5, double z5) // user selecting coordinates for peaks relatively by coordinate zero point
 {
 	x0 = 0;
 	y0 = 0;
@@ -42,6 +42,18 @@ Pyramid::Pyramid(double x1, double y1, double z1, double x2, double y2, double z
 	peaks[0].set_x(x1);
 	peaks[0].set_y(y1);
 	peaks[0].set_z(z1);
+	peaks[1].set_x(x2);
+	peaks[1].set_y(y2);
+	peaks[1].set_z(z2);
+	peaks[2].set_x(x3);
+	peaks[2].set_y(y3);
+	peaks[2].set_z(z3);
+	peaks[3].set_x(x4);
+	peaks[3].set_y(y4);
+	peaks[3].set_z(z4);
+	peaks[4].set_x(x5);
+	peaks[4].set_y(y5);
+	peaks[4].set_z(z5);
 }
 
 Pyramid::Pyramid(Peak S, Peak A, Peak B, Peak C, Peak D) 

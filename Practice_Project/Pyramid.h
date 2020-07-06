@@ -6,7 +6,7 @@ class Pyramid
 private:
 	Peak* peaks = new Peak[5]; // declaration of an objects array from class "Peak"
 	double x0, y0, z0;	
-	double brink; // грань 
+	double brink_square; // грань 
 	double all_square; // площадь поверхности 
 	double volume; // объем 
 	double a, h; // сторона основания и высота, соответственно 
@@ -21,7 +21,7 @@ public:
 	double get_volume(double a, double h);
 	
 	//construct:
-	Pyramid(double x1, double y1, double z1, double x2, double y2, double z2, double x3, double y3, double z3, double x4, double y4, double z4);
+	Pyramid(double x1, double y1, double z1, double x2, double y2, double z2, double x3, double y3, double z3, double x4, double y4, double z4, double x5, double y5, double z5);
 	Pyramid(Peak S, Peak A, Peak B, Peak C, Peak D);
 	Pyramid(double a, double h);
 };
