@@ -3,8 +3,9 @@
 
 using namespace std;
 
-//sets:
+Shape::peaks = new Peak[5];
 
+//sets:
 void Pyramid::set_brink(double my_brink)
 {
 	this->brink = my_brink;
@@ -32,8 +33,13 @@ double Pyramid::get_volume(double a, double h)
 	return this->volume = (pow(a, 2) * h) / 3;
 }
 
-//construct:
+double Shape::find_volume(double a, double h)
+{
+	volume = (pow(a, 2) * h) / 3;
+	return volume;
+}
 
+//construct:
 Pyramid::Pyramid(double x1, double y1, double z1, double x2, double y2, double z2, double x3, double y3, double z3, double x4, double y4, double z4, double x5, double y5, double z5) // user selecting coordinates for peaks relatively by coordinate zero point
 {
 	x0 = 0;
@@ -60,7 +66,6 @@ Pyramid::Pyramid(Peak S, Peak A, Peak B, Peak C, Peak D)
 {
 	/*selecting peaks in array for pyramid
 	'S' - highest peak, 'A','B','C','D' - ground peaks  */
-
 	x0 = 0; // zero coordinate point 
 	y0 = 0;
 	z0 = 0;
@@ -96,4 +101,14 @@ Pyramid::Pyramid(double a, double h)  // coordinate calculation
 	peaks[0].set_x(peaks[3].get_x() / 2); // S
 	peaks[0].set_y(peaks[3].get_y() / 2);
 	peaks[0].set_z(z0 + h);
+}
+
+Pyramid::Pyramid()
+{
+	Shape::x0 = 0;
+	Shape::y0 = 0;
+	Shape::z0 = 0;
+	Shape::all_square = 0;
+	Shape::brink_square = 0;
+	Shape::volume = 0;
 }

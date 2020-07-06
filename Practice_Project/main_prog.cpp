@@ -3,11 +3,13 @@
 Куб, пирамида, параллелепипед, призма (вершины, грани, объем, площадь поверхности)*/
 
 #include <iostream>
+#include "Shape.h"
+#include "Pyramid.h"
 
 using namespace std;
 
 int main()
 {
-	cout << "Hello world!";
+	Shape* figure = new Pyramid();
 	return 0;
 }
