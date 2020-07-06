@@ -1,7 +1,11 @@
+#include "Peak.h"
+
 #pragma once
 class Pyramid
 {
 private:
+	Peak* peaks = new Peak[5];
+	double x0, y0, z0;	// Точка отчёта
 	double brink; //площадь грани
 	double all_square; //площадь поверхности
 	double volume; //объем
@@ -17,5 +21,8 @@ public:
 	double get_volume(double a, double h);
 	
 	//construct:
+	Pyramid(double x1, double y1, double z1, double x2, double y2, double z2, double x3, double y3, double z3, double x4, double y4, double z4);
+	Pyramid(Peak S, Peak A, Peak B, Peak C, Peak D);
+	Pyramid(double a, double h);
 };
 
