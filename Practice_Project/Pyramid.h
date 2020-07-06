@@ -4,12 +4,12 @@
 class Pyramid
 {
 private:
-	Peak* peaks = new Peak[5];
-	double x0, y0, z0;	// Точка отчёта
-	double brink; //площадь грани
-	double all_square; //площадь поверхности
-	double volume; //объем
-	double a, h;
+	Peak* peaks = new Peak[5]; // declaration of an objects array from class "Peak"
+	double x0, y0, z0;	
+	double brink; // РіСЂР°РЅСЊ 
+	double all_square; // РїР»РѕС‰Р°РґСЊ РїРѕРІРµСЂС…РЅРѕСЃС‚Рё 
+	double volume; // РѕР±СЉРµРј 
+	double a, h; // СЃС‚РѕСЂРѕРЅР° РѕСЃРЅРѕРІР°РЅРёСЏ Рё РІС‹СЃРѕС‚Р°, СЃРѕРѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕ 
 public:
 	//sets:
 	void set_brink(double my_brink);
