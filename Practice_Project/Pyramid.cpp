@@ -122,4 +122,6 @@ Pyramid::Pyramid()
 	Shape::all_square = 0;
 	Shape::brink_square = 0;
 	Shape::volume = 0;
+	Pyramid::a = 0;
+	Pyramid::h = 0;
 }
