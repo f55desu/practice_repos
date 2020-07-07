@@ -19,10 +19,9 @@ void Pyramid::set_volume(double my_volume)
 	this->volume = my_volume;
 }
 //gets:
-double Pyramid::get_brink(double a, double h)
+double Pyramid::get_brink(double brink)
 {
-	double temp = pow(pow(a / 2, 2) + pow(h, 2), 1 / 2);
-	return this->brink = (a * temp) / 2;
+	return this->brink = brink;
 }
 double Pyramid::get_all_square(double a, double h)
 {
@@ -33,12 +32,24 @@ double Pyramid::get_volume(double a, double h)
 	return this->volume = (pow(a, 2) * h) / 3;
 }
 
-double Shape::find_volume(double a, double h)
+double Shape::find_volume(double a, double h) 
 {
 	volume = (pow(a, 2) * h) / 3;
 	return volume;
 }
 
+double Shape::find_brink(double a, double h)
+{
+	double temp = pow(pow(a / 2, 2) + pow(h, 2), 1 / 2);
+	brink = brink = (a * temp) / 2;
+	return brink;
+}
+
+double Shape::find_all_square(double a, double h)
+{
+	all_square = pow(a, 2) + 4 * find_brink(a, h);
+	return all_square
+}
 //construct:
 Pyramid::Pyramid(double x1, double y1, double z1, double x2, double y2, double z2, double x3, double y3, double z3, double x4, double y4, double z4, double x5, double y5, double z5) // user selecting coordinates for peaks relatively by coordinate zero point
 {

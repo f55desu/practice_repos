@@ -20,7 +20,9 @@ public:
 	double get_brink_square(double a, double h);
 	double get_all_square(double a, double h);
 	double get_volume(double a, double h);
-	//work methods
+	//find methods
+	virtual double find_volume(double a, double h);
+	virtual double find_all_square(double a, double h);
 	virtual double find_volume(double a, double h);
 };
 
