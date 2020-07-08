@@ -22,6 +22,10 @@ void Peak::set_z(double z)
 {
 	this->z = z;
 }
+void Peak::set_name(string name)
+{
+	this->name = name;
+}
 //gets:
 double Peak::get_x()
 {
@@ -34,6 +38,10 @@ double Peak::get_y()
 double Peak::get_z()
 {
 	return this->z;
+}
+string Peak::get_name()
+{
+	return this->name;
 }
 
 //construct:

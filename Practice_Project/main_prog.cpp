@@ -5,8 +5,30 @@
 #include <iostream>
 #include "Shape.h"
 #include "Pyramid.h"
+#include "Peak.h"
 
 using namespace std;
+
+Shape* figure;
+Peak* peaks;
+double volume;
+double all_square;
+double brink;
+
+void figure_props()
+{
+	cout << "The Volume: " << volume << "\n";
+	cout << "The All Square: " << all_square << "\n";
+	cout << "The Brink: " << brink << "\n";
+	cout << "The Peaks: \n";
+	for (int i = 0; i < 5; i++)
+	{
+		//cout << "Point: " << peaks[i].get_name() << "\n";
+		cout << "X = " << peaks[i].get_x() << "\n";
+		cout << "Y = " << peaks[i].get_y() << "\n";
+		cout << "Z = " << peaks[i].get_z() << "\n\n";
+	}
+}
 
 int main()
 {
@@ -35,27 +57,20 @@ int main()
 			}
 			case 1:
 			{
-				bool IsPyramid = true;
-				int Pyramid_choose;
-				cout << "\nWhat do you want?: ";
-				cout << "\n1 - Create a new pyramid";
-				cout << "\n2 - Edit an existing pyramid";
-				cout << "\nYour choise <<< "; cin >> Pyramid_choose; cout << "\n";
-				while (IsPyramid)
-				{
-					switch (Pyramid_choose)
-					{
-					case 1:
-						Shape * figure = new Pyramid();
-						break;
-					}
-					case 2:
-					{
-						double a, h;
-						cout << "\nEnter side and height <<< "; cin >> a; cin >> h; cout << "\n";
-					}
-					//case 3:
-				}
+				figure = new Pyramid();
+				double a, h;
+				cout << "\nEnter side and height <<< "; cin >> a; cin >> h; cout << "\n";
+				volume = figure->find_volume(a, h);
+				all_square = figure->find_all_square(a, h);
+				brink = figure->find_brink(a, h);
+				peaks = figure->find_peaks(a, h);
+				cout << "\nYour Pyramid: \n";
+				figure_props();
+				break;
+			}
+			default:
+			{
+				cout << "\nAn Error has been occured!";
 				break;
 			}
 			}
