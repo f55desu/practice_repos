@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/mailj/source/repos/practice_repos/geometry/Peak.h
+string
+-
+
+C:/Users/mailj/source/repos/practice_repos/geometry/Shape.h
+Peak.h
+C:/Users/mailj/source/repos/practice_repos/geometry/Peak.h
+
+C:/Users/mailj/source/repos/practice_repos/geometry/figures/Cube.cpp
+Cube.h
+C:/Users/mailj/source/repos/practice_repos/geometry/figures/Cube.h
+
+C:/Users/mailj/source/repos/practice_repos/geometry/figures/Cube.h
+../Shape.h
+C:/Users/mailj/source/repos/practice_repos/geometry/Shape.h
+
+C:/Users/mailj/source/repos/practice_repos/geometry/figures/Pyramid.cpp
+Pyramid.h
+C:/Users/mailj/source/repos/practice_repos/geometry/figures/Pyramid.h
+
+C:/Users/mailj/source/repos/practice_repos/geometry/figures/Pyramid.h
+../Shape.h
+C:/Users/mailj/source/repos/practice_repos/geometry/Shape.h
+cmath
+-
+

@@ -1,0 +1,3 @@
+C:/Users/mailj/source/repos/practice_repos/cmake-build-debug/CMakeFiles/practice_repos.dir
+C:/Users/mailj/source/repos/practice_repos/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/mailj/source/repos/practice_repos/cmake-build-debug/CMakeFiles/rebuild_cache.dir
