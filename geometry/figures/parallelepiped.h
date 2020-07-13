@@ -9,9 +9,7 @@ private:
     Peak** peaks = new Peak * [peaksCount];
     double width = 0;
     double height = 0;
-    double lengt = 0;
-
-
+    double length = 0;
 public:
     int getPeaksCount() const override
     {
@@ -19,11 +17,7 @@ public:
     }
     double find_volume() override
     {
-        return width * height * lengt;
-    }
-    double find_all_square() override
-    {
-        return 2 * find_brink() + 2 * find_face() + 2 * find_facet();
+        return width * height * length;
     }
     double find_brink() override
     {
@@ -36,6 +30,10 @@ public:
     double find_facet() override
     {
         return height * length;
+    }
+    double find_all_square() override
+    {
+        return 2 * find_brink() + 2 * find_face() + 2 * find_facet();
     }
 
     Peak** find_peaks() override

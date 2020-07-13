@@ -32,6 +32,15 @@ public:
         double temp = pow(pow(local_a / 2, 2) + pow(local_h, 2), 1 / 2);
         return ((local_a * temp) / 2);
     }
+    double find_face()
+    {
+        return 0;
+    }
+    double find_facet()
+    {
+        return 0;
+    }
+
     Peak** find_peaks() override
     {
         // create objects

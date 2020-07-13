@@ -95,7 +95,7 @@ parallelepiped::parallelepiped(const Peak& A,
 parallelepiped::parallelepiped(double a, double b, double c)
 {
     width = a;
-    heigh = b;
+    height = b;
     length = c;
 }
 

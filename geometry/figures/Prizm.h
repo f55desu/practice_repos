@@ -1,6 +1,6 @@
 #pragma once
-#ifndef PRACTICE_CUBE_H
-#define PRACTICE_CUBE_H
+#ifndef PRACTICE_PRIZM_H
+#define PRACTICE_PRIZM_H
 
 #include "../Shape.h"
 
@@ -29,6 +29,15 @@ public:
     {
         return 2 * local_a * local_h + 2 * local_b * local_h;
     }
+    double find_face()
+    {
+        return 0;
+    }
+    double find_facet()
+    {
+        return 0;
+    }
+
     Peak** find_peaks() override
     {
         // create objects
@@ -109,4 +118,4 @@ public:
 };
 
 
-#endif //PRACTICE_CUBE_H
+#endif //PRACTICE_PRIZM_H

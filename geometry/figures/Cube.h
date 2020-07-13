@@ -30,6 +30,15 @@ public:
     {
         return local_a*local_a;
     }
+    double find_face()
+    {
+        return 0;
+    }
+    double find_facet()
+    {
+        return 0;
+    }
+
     Peak** find_peaks() override
     {
         // create objects
