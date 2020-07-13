@@ -3,4 +3,17 @@ project(practice_repos)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(practice_repos main_prog.cpp geometry/Shape.cpp geometry/Shape.h geometry/Peak.cpp geometry/Peak.h geometry/figures/Pyramid.cpp geometry/figures/Pyramid.h geometry/figures/Cube.cpp geometry/figures/Cube.h)
+add_executable(practice_repos main_prog.cpp 
+geometry/Shape.cpp
+geometry/Shape.h 
+geometry/Peak.cpp 
+geometry/Peak.h 
+geometry/figures/Pyramid.cpp 
+geometry/figures/Pyramid.h 
+geometry/figures/Cube.cpp 
+geometry/figures/Cube.h 
+geometry/figures/Prizm.cpp 
+geometry/figures/Prizm.h
+geometry/figures/parallelepiped.cpp 
+geometry/figures/parallelepiped.h
+)
