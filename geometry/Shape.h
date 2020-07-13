@@ -28,6 +28,8 @@ public:
     double get_volume(double a, double h) const;
 
     //find methods
+    virtual double find_face() = 0;
+    virtual double find_facet() = 0;
     virtual double find_volume() = 0;
     virtual double find_all_square() = 0;
     virtual double find_brink() = 0;
