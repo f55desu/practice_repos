@@ -10,3 +10,5 @@
 
 Вариант задания:
 IVT2020Pr7
+
+Репозиторий с графическим интерфейсом по ссылке: https://github.com/f55desu/practice_repos_visual.git
